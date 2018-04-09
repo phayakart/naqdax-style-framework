@@ -1,0 +1,234 @@
+/* @import url('https://fonts.googleapis.com/css?family=Nunito:600'); */
+@font-face {
+    font-family: Nunito;
+    src: url(./fonts/Nunito-SemiBold.ttf);
+}
+body,* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: Helvetica, Arial,sans-serif; */
+    box-sizing: border-box;
+}
+html {
+    background: #e9ebee;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+.main {
+    width: 100%;
+    float: left;
+}
+.container-full {
+    width: 100%;
+}
+.container {
+    width: 1127px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-ndx-3 {
+    width: 20%;
+    border:1px solid #ddd;
+}
+.col-ndx-6 {
+    width: 50%;
+    border:1px solid #ddd;
+}
+.col-ndx-4 {
+    width: 30%;
+    border:1px solid #ddd;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.wrapper {	 
+  width: 90%;
+  margin: 0 auto 0 auto;
+  display:grid;
+  grid-template-columns:  (gutter) 1fr repeat(16, (col) 4.25fr (gutter) 1fr );
+  grid-template-rows: repeat(9, (row) auto (gutter) 20px );
+}
+.header {
+    padding: 15px;
+}
+.menu {
+    width: 100%;
+    height: 42px;
+    z-index: 1;
+}
+.menu .link-logo {
+    margin-top: 9px;
+    margin-left: 10px;
+    float: left;
+    font-size: 18px;
+}
+.menu .item {
+    position: relative;
+    margin-left: 11px;
+    margin-top: 6px;
+    padding: 4px;
+}
+.menu .item i {
+    cursor: pointer;
+}
+.menu .item.left {
+    float: left;
+}
+.menu .item.right {
+    float: right;
+    right: 0;
+}
+/* .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+} */
+
+input[class*="ndx-from"] {
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #858585;
+    vertical-align: middle;
+    padding: 5px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+.bg-blue {
+    background-color: #488aff;
+    color: #fff;
+}
+.bg-blue a {
+    color: #fff;
+}
+.fixed {
+    position: fixed;
+}
+.pd-0 {
+    padding: 0 !important;
+}
+.content-header {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #494949;
+}
+.content-herder-semi {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    color: #494949;
+}
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #488aff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-btn {
+    position: relative;
+    display: inline-block;
+}    
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: #fff;
+    min-width: 150px;
+    overflow: auto;
+    transition: .3s;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover { 
+    background-color: #ddd
+}
+
+.show {display:block;}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+@media screen and (max-height: 450px) {
+    .sidemenu {padding-top: 15px;}
+    .sidemenu a {font-size: 18px;}
+}
